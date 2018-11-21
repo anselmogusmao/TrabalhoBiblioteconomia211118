@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#"
+     xml:base="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:UNIVERSIDADE="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE">
+        <Creator>Anselmo Rezende Gusmão</Creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Creator -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Adquiri -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Adquiri">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Consumidores"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Credencia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Credencia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fiscalização"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fabrica -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fabrica">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Marcas"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fiscalização"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fiscaliza -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fiscaliza">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Modelo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Vende -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Vende">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fornecedores"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fiscalização"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Arma -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Arma">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Modelo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#CBC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#CBC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Marcas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Caça_pesca -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Caça_pesca">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fornecedores"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Consumidores -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Consumidores">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#MinhasClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fiscalização -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fiscalização">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#MinhasClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fornecedores -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fornecedores">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#MinhasClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Glock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Glock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Marcas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Marcas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Marcas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#MinhasClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#MinhasClasses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#MinhasClasses"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Modelo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Modelo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#MinhasClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Taurus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Taurus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Marcas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#arma_curta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#arma_curta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Modelo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#arma_longa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#arma_longa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Modelo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#espingarda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#espingarda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#arma_longa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#exercito_brasileiro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#exercito_brasileiro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fiscalização"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#explosivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#explosivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Modelo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#fumigino -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#fumigino">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#explosivo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#fuzil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#fuzil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#arma_longa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#governo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#governo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Consumidores"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#governo_federal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#governo_federal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fiscalização"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#granada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#granada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#explosivo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#importadora -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#importadora">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fornecedores"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#loja_especializada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#loja_especializada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fornecedores"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#morteiro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#morteiro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#explosivo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#pessoa_fisica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#pessoa_fisica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Consumidores"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#pessoa_juridica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#pessoa_juridica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Consumidores"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#pistola -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#pistola">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#arma_curta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#policia_estadual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#policia_estadual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#Fiscalização"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#receita_federal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#receita_federal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#governo_federal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#revolver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#revolver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#arma_curta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#submetralhadora -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#submetralhadora">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gapco/ontologies/2018/7/UNIVERSIDADE#arma_longa"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
